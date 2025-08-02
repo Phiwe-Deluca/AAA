@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* AAA Travel Risk App Design System - Light Mode Only
-All colors MUST be HSL. Clean, sleek design with red/blue accents.
+/* AAA Travel Risk App Design System 
 */
 
 @layer base {
