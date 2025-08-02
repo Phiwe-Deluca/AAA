@@ -176,22 +176,22 @@
   /* Risk level colors */
   .risk-low {
     background-color: hsl(var(--risk-low));
-    color: white;
+    color: green;
   }
 
   .risk-medium {
     background-color: hsl(var(--risk-medium));
-    color: white;
+    color: yellow;
   }
 
   .risk-high {
     background-color: hsl(var(--risk-high));
-    color: white;
+    color: orange;
   }
 
   .risk-critical {
     background-color: hsl(var(--risk-critical));
-    color: white;
+    color: red;
   }
 
   /* Sticky note decorations */

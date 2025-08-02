@@ -7,7 +7,7 @@ import { MapPin, Navigation, Car, AlertTriangle, Award, ExternalLink } from "luc
 
 const Dashboard = () => {
   const [userInfo, setUserInfo] = useState<any>(null);
-  const [riskScore, setRiskScore] = useState(0);
+  const [riskScore, setRiskScore] = useState(10);
 
   useEffect(() => {
     const stored = localStorage.getItem('userInfo');
@@ -16,7 +16,7 @@ const Dashboard = () => {
     }
     
     // Risk score will be set by backend
-    setRiskScore(0);
+    setRiskScore(10);
   }, []);
 
   const frequentedPlaces: any[] = [];
@@ -85,10 +85,10 @@ const Dashboard = () => {
           </Card>
 
           {/* Current Warning */}
-          <Card className="glass-card border-l-4 border-l-muted">
+          <Card className="glass-card border-l-4 border-l-muted" >
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <AlertTriangle size={24} />
+              <CardTitle className="glass-card border-1-4 border-1-muted" >
+                <AlertTriangle size={24} color="red" />
                 Current Warnings
               </CardTitle>
               <CardDescription>No active alerts for your area</CardDescription>
@@ -100,7 +100,7 @@ const Dashboard = () => {
                 </p>
                 <div className="flex gap-2">
                   <Button 
-                    variant="outline" 
+                    color = "red" 
                     size="sm"
                     onClick={openGoogleMaps}
                     className="flex items-center gap-1"
@@ -110,11 +110,11 @@ const Dashboard = () => {
                     <ExternalLink size={12} />
                   </Button>
                   <Button 
-                    variant="outline" 
+                    color="red" 
                     size="sm"
                     className="flex items-center gap-1"
                   >
-                    <Navigation size={16} />
+                    <Navigation size={20} color="red" />
                     Safer Route
                   </Button>
                 </div>
@@ -129,7 +129,7 @@ const Dashboard = () => {
           <Card className="glass-card">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <MapPin className="text-primary" size={24} />
+                <MapPin className="text-primary" size={24} color="blue" />
                 Frequented Places
               </CardTitle>
             </CardHeader>
@@ -150,7 +150,7 @@ const Dashboard = () => {
                   ))
                 ) : (
                   <div className="text-center p-6 text-muted-foreground">
-                    <MapPin size={32} className="mx-auto mb-2" />
+                    <MapPin size={40} className="mx-auto mb-2" />
                     <p>No frequented places configured yet</p>
                   </div>
                 )}
@@ -162,7 +162,7 @@ const Dashboard = () => {
           <Card className="glass-card">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Navigation className="text-primary" size={24} />
+                <Navigation className="text-primary" size={24} color="red" />
                 Recent Routes
               </CardTitle>
             </CardHeader>
@@ -208,6 +208,7 @@ const Dashboard = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.8!2d-74.0059!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuMiJX!5e0!3m2!1sen!2sus!4v1000000000000!5m2!1sen!2sus"
                 width="100%" 
                 height="300" 
+                color="red"
                 style={{ border: 0, borderRadius: '0.5rem' }}
                 allowFullScreen
                 loading="lazy"

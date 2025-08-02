@@ -40,7 +40,7 @@ const TravelEngine = () => {
         {/* Header */}
         <div className="mb-6">
           <h1 className="text-3xl font-bold text-foreground mb-2 flex items-center gap-2">
-            <Brain className="text-primary" size={32} />
+            <Brain className="text-primary" size={32}  />
             Travel Risk Engine
           </h1>
           <p className="text-muted-foreground">
@@ -53,7 +53,7 @@ const TravelEngine = () => {
           <Card className="glass-card">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <AlertTriangle className="text-primary" size={24} />
+                <AlertTriangle className="text-primary" size={24} color="red" />
                 Current Risk Assessment
               </CardTitle>
               <CardDescription>
@@ -128,7 +128,7 @@ const TravelEngine = () => {
                   ))
                 ) : (
                   <div className="text-center p-6 text-muted-foreground">
-                    <Brain size={32} className="mx-auto mb-2" />
+                    <Brain size={32} className="mx-auto mb-2" color="red" />
                     <p>Risk factors will be calculated from your data</p>
                   </div>
                 )}
@@ -140,8 +140,8 @@ const TravelEngine = () => {
         {/* Predictions */}
         <Card className="glass-card">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Clock className="text-primary" size={24} />
+            <CardTitle className="flex items-center gap-2 ">
+              <Clock className="text-primary" size={24}  />
               Risk Predictions
             </CardTitle>
             <CardDescription>
@@ -164,7 +164,7 @@ const TravelEngine = () => {
                 ))
               ) : (
                 <div className="col-span-full text-center p-6 text-muted-foreground">
-                  <Clock size={32} className="mx-auto mb-2" />
+                  <Clock size={32} className="mx-auto mb-2"color="red" />
                   <p>Predictions will be generated from your travel data</p>
                 </div>
               )}
@@ -204,7 +204,7 @@ const TravelEngine = () => {
               ) : (
                 <div className="flex items-center justify-center h-full text-muted-foreground">
                   <div className="text-center">
-                    <TrendingUp size={48} className="mx-auto mb-4" />
+                    <TrendingUp size={48} className="mx-auto mb-4" color="red" />
                     <p>Historical data will be displayed as you travel</p>
                   </div>
                 </div>
