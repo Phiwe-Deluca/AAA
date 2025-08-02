@@ -2,7 +2,7 @@
 git clone https://github.com/your-username/aaa-platform.git
 
 # Navigate into the project folder
-cd aaa-platform
+cd AAA
 
 # Install dependencies
 npm install
