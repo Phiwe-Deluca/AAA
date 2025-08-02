@@ -11,7 +11,7 @@ import Badges from "./pages/Badges";
 import TravelEngine from "./pages/TravelEngine";
 import FrequentedAreas from "./pages/FrequentedAreas";
 import Settings from "./pages/Settings";
-import NotFound from "./pages/NotFound";
+
 
 const queryClient = new QueryClient();
 
@@ -31,7 +31,6 @@ const App = () => (
           <Route path="/frequented-areas" element={<FrequentedAreas />} />
           <Route path="/settings" element={<Settings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

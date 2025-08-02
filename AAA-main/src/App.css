@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.select-glow {
+  background: linear-gradient(to right, silver, black, silver);
+  border: 1px solid white;
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(192,192,192,0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.select-glow:hover {
+  box-shadow: 0 0 14px rgba(255,255,255,0.9);
+}
+
